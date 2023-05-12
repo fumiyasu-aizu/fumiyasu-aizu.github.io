@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="点字,点字の練習">
+<meta name="description" content="点字の練習をするプログラム">
+<meta name="viewport" content="width=320, user-scalable=no">
+<title> 点 字 練 習 </title>
+<link rel="stylesheet" href="htmlsub/tenjiStyle.css">
+</head>
+<body>
+<!--
+<header>
+<h1>点 字 練 習</h1>
+</header>
+-->
+<form name="tenji">
+<div>
+<canvas class="canvas1" id="tenjiCanvas" width="300" height="110"></canvas><br>
+</div>
+<div>
+<input class="ten" type="button" name="btngroup" onClick="tenButton(1)">
+<input class="ten" type="button" name="btngroup" onClick="tenButton(2)"><br>
+<input class="ten" type="button" name="btngroup" onClick="tenButton(3)">
+<input class="ten" type="button" name="btngroup" onClick="tenButton(4)"><br>
+<input class="ten" type="button" name="btngroup" onClick="tenButton(5)">
+<input class="ten" type="button" name="btngroup" onClick="tenButton(6)"><br>
+</div>
+<div>
+<input class="nextButton" type="button"  name="nextBtn" value="→" onClick="nextC()">
+<input class="enterButton" type="button" value="決定" onClick="enter()"><br>
+<input class="tenTypeButton" type="button" value="凸" onClick="tenjiType(this)">
+<input class="resetButton" type="button" name="resetBtn"  value="カナ" onClick="resetMode()">
+<input class="clrButton" type="button" value="クリア" onClick="clrTen()">
+</div>
+</form>
+
+<hr>
+<div class=footer>
+F. Saito
+</div>
+
+<script src="tenji.js" charset="UTF-8"></script>
+<noscript>このブラウザでは JavaScript が利用できない設定になっています。</noscript>
+</body>
+</html>
+
+
+

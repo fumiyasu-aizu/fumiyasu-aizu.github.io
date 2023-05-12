@@ -1,0 +1,24 @@
+﻿@charset "UTF-8";
+
+body {text-align: start; line-height: 130%;
+      color: black; background-color: Ivory;
+      font-family: "メイリオ",
+      "Hiragino Kaku Gothic Pro",
+      sans-serif;
+      font-size: 14px; 
+      width: 300px;
+     }
+h1 {text-align: center; letter-spacing: 4px; font-size: 22px;
+    background-color:goldenrod; margin: 6px; padding: 6px;}
+.wrapButton {
+    text-align: center;
+}
+.startButton {
+    width: 280px; height: 28px;
+    font-size: 16px; 
+}
+//p {margin: 20px 0px 20px 4px;}
+p.abstract {margin: 16px;}
+p.footer {text-align: start; margin: 0px 0px 0px 10px; font-size: small;}
+
+

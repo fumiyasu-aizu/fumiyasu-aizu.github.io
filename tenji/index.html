@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="点字,点字の練習">
+<meta name="description" content="点字の練習をするプログラム">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<title> 点 字 練 習 </title>
+<link rel="stylesheet" href="htmlsub/tenjiStyle0.css">
+</head>
+<body>
+
+<header>
+<h1>点 字 練 習</h1>
+<p>
+このサイトは点字を打つ練習をするためのものです。１マスまたは２マスの点字を入力すると、対応する文字などを表示します。
+</p>
+</header>
+
+<form name="tenji">
+<div>
+<input class="startButton" type="button" name="btngroup" value="スタート" onClick="startTenji()">
+</div>
+<p>
+基本的な点字を覚えるためのもので、点字で表示された文を翻訳するためのものではありません。
+</p>
+<div>
+<h3>［点のセット、リセット］</h3>
+<p>
+操作したい点をタップすると点の状態が反転します。クリアボタンをタップすると全部の点を一度にリセットすることができます。
+</p>
+<h3>［決定ボタン］</h3>
+<p>
+決定ボタンをタップすると、指定された点字に対応する文字が表示されます。
+</p>
+<h3>［矢印ボタン（→ または ←）］</h3>
+<p>
+点の操作中に前置点と判別できた場合、表示エリアに「前置点」と表示されます。ここで矢印ボタンをタップするとその前置点と対になる点字を入力することができます。２マス目の点字が入力できたら決定ボタンをタップしてください。
+</p>
+<h3>［凸凹ボタン］</h3>
+<p>
+凸面モードと凹面モードの切り替えをします。
+</p>
+<h3>［カナ、数字、英字ボタン］</h3>
+<p>
+始めはカナモードになっています。数符の点、または外字符の点を入力すると、それぞれ数字、アルファベットが入力できるモードになります。その際、このボタンもそれに対応した表示がされます。このボタンをタップすると、カナモードに戻ります。リセットボタンのような機能になっていますので、間違えて矢印ボタンをタップしてしまった時とか始めの状態に戻したい時に使ってください。
+</p>
+<h3>［問題点］</h3>
+<p>
+「読点」と「外字符」は同じ点字になっていますので、「読点」と表示させるには空白マスを続けた2マス文字として入力する必要があります。その都合上「句点」は空白マスを続けた3マス文字として入力する必要があります。<br>
+カナ文字や数字、アルファベットは大丈夫だと思いますが、記号類などに未登録の文字が多数存在します。また、プログラム作製ミスなどにより不具合があるかもしれません。
+</p>
+<div>
+<input class="startButton" type="button" name="btngroup" value="スタート" onClick="startTenji()">
+</div>
+</form>
+<hr>
+<div class=footer>
+F. Saito
+</div>
+<script src="checkWidth.js" charset="UTF-8"></script>
+<noscript>このブラウザでは JavaScript が利用できない設定になっています。</noscript>
+</body>
+</html>
+
+
+
+
+

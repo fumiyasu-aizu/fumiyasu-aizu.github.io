@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="keywords" content="九九,九九の練習,九九のドリル,九九のドリルプログラム"/>
+<meta name="description" content="九九の練習をするプログラム"/>
+<meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8"/>
+<title> 九 九 の ド リ ル </title>
+<link rel=stylesheet type="text/css" href="htmlsub/tabletstyle.css" />
+<noscript>このブラウザでは JavaScript が利用できない設定になっています。</noscript>
+</head>
+<body>
+<h1> 九 九 の ド リ ル </h1>
+<form name="drill">
+
+まちじかん<br />
+みじかい <-
+<input type="radio" name="radiogroup" value="1" checked onClick="setSpeed()" />
+<input type="radio" name="radiogroup" value="2" onClick="setSpeed()" />
+<input type="radio" name="radiogroup" value="3" onClick="setSpeed()" />
+<input type="radio" name="radiogroup" value="4" onClick="setSpeed()" />
+<input type="radio" name="radiogroup" value="5" onClick="setSpeed()" />
+-> ながい　<select name="Qtype" onChange="setType()">
+
+<option value="UP">あがり</option>
+<option value="DOWN">さがり</option>
+<option value="RANDOM">ばらばら</option>
+<option value="RANDOM2">おうよう</option>
+</select>
+<br />
+
+
+<input class="danButton1" type="button" value="  2 のだん  " name="btngroup" onClick="startQ(2)" />
+<input class="danButton1" type="button" value="  3 のだん  " name="btngroup" onClick="startQ(3)" />
+<input class="danButton1" type="button" value="  4 のだん  " name="btngroup" onClick="startQ(4)" />
+<input class="danButton1" type="button" value="  5 のだん  " name="btngroup" onClick="startQ(5)" />
+<br />
+<input class="danButton1" type="button" value="  6 のだん  " name="btngroup" onClick="startQ(6)" />
+<input class="danButton1" type="button" value="  7 のだん  " name="btngroup" onClick="startQ(7)" />
+<input class="danButton1" type="button" value="  8 のだん  " name="btngroup" onClick="startQ(8)" />
+<input class="danButton1" type="button" value="  9 のだん  " name="btngroup" onClick="startQ(9)" /><br />
+<input class="danButton1" type="button" value=" ぜんぶ " name="btngroup" onClick="startQ(10)" />
+<input class="danButton2" type="button" value=" べつなだん " onClick="doEsc()" />
+<input class="danButton1" type="button" value=" CLR " onClick="clrState()" />
+<input type="checkbox" name="colorFlg" checked onClick="setcolorFlg()" /> いろ
+<br />
+
+<canvas id="kukuCanvas" width="560" height="150"></canvas><br />
+
+
+<input class="numButton1" type="button" value="  1  " onClick="numButton(1)" />
+<input class="numButton1" type="button" value="  2  " onClick="numButton(2)" />
+<input class="numButton1" type="button" value="  3  " onClick="numButton(3)" />
+<input class="numButton1" type="button" value="  4  " onClick="numButton(4)" />
+<input class="numButton1" type="button" value="  5  " onClick="numButton(5)" /><br />
+<input class="numButton1" type="button" value="  6  " onClick="numButton(6)" />
+<input class="numButton1" type="button" value="  7  " onClick="numButton(7)" />
+<input class="numButton1" type="button" value="  8  " onClick="numButton(8)" />
+<input class="numButton1" type="button" value="  9  " onclick="numButton(9)" />
+<input class="numButton1" type="button" value="  0  " onClick="numButton(0)" />
+
+<p>
+<input class="numButton2" type="button" value=" １もじけす " onClick="doBS()" />
+<input class="numButton2" type="button" value=" けってい " onClick="enterButton()" />
+　<input class="numButton1" type="button" value="  ?  " onClick="showAnswer()" />
+</p>
+</form>
+<hr />
+<div class=footer>
+ F. Saito<br />
+</div>
+</body>
+<script src="drillTablet.js"></script>
+</html>
+
+

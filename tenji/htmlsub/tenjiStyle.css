@@ -1,0 +1,78 @@
+﻿﻿﻿@charset "UTF-8";
+
+body {;}
+body {
+    color: Black; background-color: Ivory;
+    font-family: "メイリオ",
+      "Hiragino Kaku Gothic Pro",
+      sans-serif;
+}
+header h1 {
+    text-align: center;
+    font-size: 22px;
+    margin: 0px 0px 0px 0px;
+}
+
+form {text-align: center;}
+div {
+    margin: 4px;
+}
+.ten{
+    display: inline-block;
+    text-decoration: none;
+    color: Black;
+    background-color: White; 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 2px Black;
+    margin: 0px 4px 4px 4px;
+}
+
+.enterButton {
+    width: 90px; height: 40px;
+    font-size: 16px;
+    margin: 2px 7px 2px 7px;
+    padding: 3px;
+}
+.nextButton {
+    width: 90px; height: 40px;
+    font-size: 18px;
+    margin: 2px 7px 2px 7px;
+    padding: 3px;
+}
+.tenTypeButton {width: 50px; height: 40px;
+    font-size: 16px;
+    margin: 2px 7px 0px 7px;
+    padding: 3px;
+}
+.resetButton {
+    width: 70px; height: 40px;
+    font-size: 13px;
+//    vertical-align: middle;
+    margin: 2px 7px 0px 7px;
+    padding: 3px;
+}
+.clrButton {
+    width: 70px; height: 40px;
+    font-size: 13px;
+//    vertical-align: middle;
+    margin: 2px 7px 0px 7px;
+    padding: 3px;
+}
+canvas {
+    margin: -100px 0px -100px px;
+//    padding: 0px;
+}
+.setsumei {
+    margin: 10px 40px;
+    font-size: normal;
+    text-align: center;
+}
+div.footer  {
+    margin: 2px 0px 0px 6px;
+    font-size: small;
+//    text-align: right;
+}
+
+
