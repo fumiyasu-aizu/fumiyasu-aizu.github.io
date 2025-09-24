@@ -25,23 +25,33 @@ Snap! で同じようなやり方をすると、信じられないくらい時�
 <img src="./pics/turboOn.png" alt="turbo mode on" data-lazy="true" style="display: inline-block;" width="20%" height="20%"> <img src="./pics/turboOff.png" alt="turbo mode off" data-lazy="true" style="display: inline-block;" width="20%" height="20%"> や <img src="./pics/warp.png" alt="warp" data-lazy="true" style="display: inline-block;" width="6%" height="6%"> で囲めばその範囲のスクリプトを高速で実行することができます。
 リスト処理に関しては次のような一瞬で行える方法があります。</p>
 <div>
+<p>
+1 番目の方法は reshape ブロックを使用しています。これは APL 言語の機能を取り入れたものです。Snap! では多次元の配列を扱うことができます。配列の形を変更する reshape ブロックを応用しています。</p>
 <img src="./pics/list1000snap1.png" alt="1000 個のリストを値 0 で初期化 reshape 版" width="32%" height="32%">
 </div>
 <div>
+<p>
+2 番目の方法は指定されたリストの各要素に対して指定された操作を行ったリストを作成する map を応用したものです。</p>
 <img src="./pics/list1000snap2.png" alt="1000 個のリストを値 0 で初期化 map 版" width="57%" height="57%">
 </div>
 <div>
+<p>
+3 番目の方法は APL 言語の機能を取り入れたものです。リストに対して演算を行うと各要素それぞれに演算をほどこしたリストを得ることができます。このような機能は R 言語や Julia 言語にも備わっています。</p>
 <img src="./pics/list1000snap3.png" alt="1000 個のリストを値 0 で初期化 演算版" width="45%" height="45%">
 </div>
 <div>
-<img src="./pics/list1000r.png" alt="1000 個のリストを値 0 で初期化 再帰呼び出し版定義" data-lazy="true" style="display: inline-block;" width="55%" height="55%">　<img src="./pics/list1000snap4.png" alt="1000 個のリストを値 0 で初期化 再帰呼び出し版" data-lazy="true" style="display: inline-block;" width="25%" height="25%"> 
-</div>
-<div>
-<img src="./pics/list1000js.png" alt="1000 個のリストを値 0 で初期化 JavaScript 版" width="60%" height="60%">
-</div>
+<p>
+4 番目の方法は指定した値を要素とした指定の長さのリストを作るブロックを作成する例です。再帰呼び出しを使っています。右側のものができたブロックを使用したものです。要素の値(0)、長さ(1000) を引数としています。この定義のようにコメントを付けると、ブロックにヘルプ表示をさせることができます。なお、ver.11 から変数 a を list で囲う必要がなくなりました。これは末尾再帰なので一般的には再帰ではないループで行ったほうが高速なのですが、Snap! では再帰呼び出しのほうが高速になります。</p>
+<img src="./pics/list1000r.png" alt="1000 個のリストを値 0 で初期化 再帰呼び出し版定義" data-lazy="true" style="display: inline-block;" width="55%" height="55%">　<img src="./pics/list1000snap4.png" alt="1000 個のリストを値 0 で初期化 再帰呼び出し版" data-lazy="true" style="display: inline-block;" width="30%" height="30%">
+<img src="./pics/list1000r_2.png" alt="1000 個のリストを値 0 で初期化 再帰呼び出し版" data-lazy="true" style="display: inline-block;" width="30%" height="30%"></div>
 <div>
 <p>
-1 番目の方法は reshape ブロックを使用しています。これは APL 言語の機能を取り入れたものです。Snap! では多次元の配列を扱うことができます。配列の形を変更する reshape ブロックを応用しています。2 番目の方法は指定されたリストの各要素に対して指定された操作を行ったリストを作成する map を応用したものです。3 番目の方法は APL 言語の機能を取り入れたものです。リストに対して演算を行うと各要素それぞれに演算をほどこしたリストを得ることができます。このような機能は R 言語や Julia 言語にも備わっています。4 番目の方法は指定した値を要素とした指定の長さのリストを作るブロックを作成する例です。再帰呼び出しを使っています。右側のものができたブロックです。要素の値(0)、長さ(1000)、空のリストを引数としています。これを変数「リスト」に代入すれば上記のスクリプトと同じようになります。5 番目の方法は JavaScript のコードを使って処理をするものです。引数の指定方法は 4 番目の方法と同じです。こんなことができるので既存のブロックだけでは作れないものも作れてしまいます。<br>
+5 番目の方法は JavaScript のコードを使って処理をするものです。要素の値(0)、長さ(1000)、空のリストを引数としています。JavaScript の配列を Snap! のリストとして扱うことができないので、空のリストを受け渡し用に使用します。JavaScript でプログラミングができるので既存のブロックだけでは作れないものも作れてしまいます。</p>
+<img src="./pics/list1000js.png" alt="1000 個のリストを値 0 で初期化 JavaScript 版" width="60%" height="60%">
+</div>
+<br>
+<div>
+<p>
 最初の Scratch のスクリプトは何をするものか分かりやすいものでした。反面、Scratch ではこのようなやり方くらいしかありません。Snap! にはいろいろなアプローチの仕方がありますが、その分複雑になります。これが Scratch と Snap! の違い、開発理念の違いのように思えます。Snap! はバージョンアップが頻繁に行われていて、機能の改良や追加がなされています。
 </p>
       </section>
@@ -51,7 +61,8 @@ Snap! で同じようなやり方をすると、信じられないくらい時�
         </p>
         <p>
         <div class="download">
-          ◯ [ <a href="./aboutSnap.pdf">aboutSnap.pdf</a> ]  (20.9 Mbytes) 2025/9/8 版　加筆修正中ですので最新版をご利用ください。
+          ◯ [ <a href="./aboutSnap.pdf">aboutSnap.pdf</a> ]  (21.3 Mbytes) 2025/9/24 版<br>
+　　ver.11 に対応し（この文書に関わる append や Color 型に関する部分など）、「継続」の項目を復活、加筆修正しました。<!--加筆修正中ですので最新版をご利用ください。-->
         </div>
         </p>
       </section>
